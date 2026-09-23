@@ -1,0 +1,430 @@
+/* ==============================
+   General Styles
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #242424;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==============================
+   Navigation
+================================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.nav-links a:not(.nav-button):hover {
+    text-decoration: underline;
+}
+
+.nav-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #333333;
+}
+
+
+/* ==============================
+   Hero Section
+================================= */
+
+.hero {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 8%;
+    background-color: #f2f2f2;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero-tag {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555555;
+}
+
+.hero h1 {
+    font-size: 76px;
+    line-height: 0.95;
+    margin: 0 0 30px;
+    letter-spacing: -3px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 35px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #444444;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #333333;
+}
+
+
+/* ==============================
+   Hero Visual
+================================= */
+
+.hero-visual {
+    width: 320px;
+    min-width: 320px;
+}
+
+.visual-card {
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 10px 10px 0 #000000;
+}
+
+.visual-card span {
+    font-size: 35px;
+}
+
+.visual-card h3 {
+    font-size: 30px;
+    margin: 25px 0 15px;
+}
+
+.visual-card p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+
+/* ==============================
+   Features Section
+================================= */
+
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-heading span {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 35px 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-number {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #777777;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+}
+
+.feature-card p {
+    line-height: 1.6;
+    color: #555555;
+}
+
+.feature-card a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.feature-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   Call To Action
+================================= */
+
+.cta {
+    padding: 100px 8%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta span {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cta h2 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.cta p {
+    max-width: 550px;
+    margin: 0 auto 35px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #dddddd;
+}
+
+
+/* ==============================
+   Footer
+================================= */
+
+footer {
+    padding: 35px 8%;
+    background-color: #fafafa;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #666666;
+}
+
+
+/* ==============================
+   Mobile Responsive Design
+================================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 18px 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .nav-button {
+        padding: 9px 16px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 25px;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        letter-spacing: -2px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .visual-card {
+        padding: 30px;
+    }
+
+
+    /* Features */
+
+    .features {
+        padding: 70px 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 40px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        padding: 70px 25px;
+    }
+
+    .cta h2 {
+        font-size: 38px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+}
+
+
+/* ==============================
+   Small Phones
+================================= */
+
+@media (max-width: 400px) {
+
+    .nav-links {
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        padding: 8px 13px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
